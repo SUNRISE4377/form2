@@ -29,14 +29,16 @@ namespace WpfApp3
 
             Width = MaxWidth;
             Height = MaxHeight;
+            PID1.Visibility = Visibility.Visible;
+            PID2.Visibility = Visibility.Visible;
         }
 
         private void OnUnchecked(object sender, RoutedEventArgs e)
         {
             Width = MinWidth;
             Height = MinHeight;
+            PID1.Visibility = Visibility.Collapsed;
+            PID2.Visibility = Visibility.Collapsed;
         }
-
-       
     }
 }
